@@ -1,0 +1,34 @@
+.container {
+  margin: 0px;
+  padding: 20px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.h1 {
+  text-align: center;
+}
+
+.top {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    flex-direction: column-reverse;
+  }
+
+  .bottom {
+    flex-direction: column-reverse;
+  }
+}
